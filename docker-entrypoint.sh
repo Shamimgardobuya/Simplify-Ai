@@ -5,7 +5,7 @@ echo "Running artisan caches..."
 php artisan config:clear
 
 echo "Running migrations"
-php artisan migrate
+php artisan migrate --force
 
 php artisan cache:clear
 php artisan route:clear
